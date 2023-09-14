@@ -68,6 +68,7 @@ class PlanetsViewController: UIViewController {
         
         tableView.rx.willDisplayCell
             .filter { self.viewModel.hasReachFinalPlanet(row: $0.indexPath.row) }
+            .take(until: { _ in self.viewModel.hasReachedFinalPage })
             .subscribe(onNext: { [weak self] _ in
                 self?.viewModel.fetchData()
             }).disposed(by: bag)

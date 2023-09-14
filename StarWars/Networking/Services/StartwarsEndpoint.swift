@@ -21,9 +21,7 @@ enum StartwarsEndpoint {
         guard let url = URL(string: "\(baseURL)\(path)") else {
             fatalError("URL for endpoint at \(path) could not be constructed")
         }
-        
-        print("url: \(url.absoluteString)")
-        
+                
         return url
     }
     
