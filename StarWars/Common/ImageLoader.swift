@@ -14,10 +14,10 @@ import AlamofireImage
  Download and cahce images
  */
 final class ImageLoader {
-
+    
     public static let instance = ImageLoader()
     private let cache = AutoPurgingImageCache()
-
+    
     func loadImage(from url: URL, completion: @escaping (Result<UIImage, Error>) -> Void) {
         if let image = cache.image(withIdentifier: url.absoluteString) {
             completion(.success(image))
