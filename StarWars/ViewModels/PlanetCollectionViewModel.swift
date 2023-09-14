@@ -10,7 +10,7 @@ import Foundation
 import RxSwift
 import RxCocoa
 
-class PlanetsViewModel {
+class PlanetCollectionViewModel {
     
     // MARK: - Output
     let planets: BehaviorRelay<[PlanetViewModel]> = BehaviorRelay(value: [])
@@ -23,10 +23,16 @@ class PlanetsViewModel {
     
     func configure() {}
     
+    /**
+     Validates user is checking the final row
+     */
     public func hasReachFinalPlanet(row: Int) -> Bool {
         return planets.value.count - 1 < self.maxPlanets && row == self.planets.value.count - 1
     }
     
+    /**
+     Add planets from get planets API response to planets
+     */
     private func addPlanets(response: GetPlanetsResponse) {
         debugPrint("next: \(response.next ?? "nil")")
         
@@ -43,6 +49,9 @@ class PlanetsViewModel {
     
     // MARK: - API
     
+    /**
+     Fetch Data from get planets
+     */
     public func fetchData() {
         let page = page == 1 ? nil : "\(page)"
         PlanetService.getPlanets(page: page) { [weak self] (result: Result<GetPlanetsResponse, Error>) in

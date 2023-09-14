@@ -9,9 +9,12 @@ import UIKit
 
 import Alamofire
 
-final class ImageService {
-        
-    class func downloadImage(
+final public class ImageService {
+    
+    /**
+     Download images
+     */
+    public func downloadImage(
         url: URL,
         completion: @escaping (Result<UIImage, Error>) -> Void
     ) {

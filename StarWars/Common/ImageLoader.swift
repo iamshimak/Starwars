@@ -10,6 +10,9 @@ import UIKit
 import Alamofire
 import AlamofireImage
 
+/**
+ Download and cahce images
+ */
 final class ImageLoader {
 
     public static let instance = ImageLoader()

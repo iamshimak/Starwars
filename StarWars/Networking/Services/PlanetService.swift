@@ -9,8 +9,11 @@ import Foundation
 
 import Alamofire
 
-final class PlanetService {
+final public class PlanetService {
     
+    /**
+     Get planete API
+     */
     class func getPlanets(
         page: String? = nil,
         completion: @escaping (Result<GetPlanetsResponse, Error>) -> Void
