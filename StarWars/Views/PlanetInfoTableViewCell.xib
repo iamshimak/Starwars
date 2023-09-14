@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="176" id="KGk-i7-Jjw" customClass="PlanetInfoTableViewCell" customModule="StarWars" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="593" height="176"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="593" height="176"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PcK-eP-nah">
+                        <rect key="frame" x="8" y="8" width="160" height="160"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="PcK-eP-nah" secondAttribute="height" multiplier="1:1" id="GgB-GX-tQ3"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Planet name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.59999999999999998" translatesAutoresizingMaskIntoConstraints="NO" id="Ret-Vn-msr">
+                        <rect key="frame" x="176" y="8" width="409" height="30"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Climate Info" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oEQ-Lo-23a">
+                        <rect key="frame" x="176" y="46" width="409" height="14.5"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Ret-Vn-msr" firstAttribute="leading" secondItem="PcK-eP-nah" secondAttribute="trailing" constant="8" id="76x-RX-Yc7"/>
+                    <constraint firstAttribute="trailing" secondItem="Ret-Vn-msr" secondAttribute="trailing" constant="8" id="Nj6-nK-4QE"/>
+                    <constraint firstItem="oEQ-Lo-23a" firstAttribute="leading" secondItem="PcK-eP-nah" secondAttribute="trailing" constant="8" id="Ojg-JE-PsD"/>
+                    <constraint firstItem="oEQ-Lo-23a" firstAttribute="top" secondItem="Ret-Vn-msr" secondAttribute="bottom" constant="8" id="PS2-6R-FB4"/>
+                    <constraint firstAttribute="bottom" secondItem="PcK-eP-nah" secondAttribute="bottom" constant="8" id="TlO-X8-6AW"/>
+                    <constraint firstAttribute="trailing" secondItem="oEQ-Lo-23a" secondAttribute="trailing" constant="8" id="UBA-Bo-ffh"/>
+                    <constraint firstItem="Ret-Vn-msr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="afd-5o-3ig"/>
+                    <constraint firstItem="PcK-eP-nah" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="fHS-5q-dq9"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="oEQ-Lo-23a" secondAttribute="bottom" constant="8" id="fdn-P4-rH4"/>
+                    <constraint firstItem="PcK-eP-nah" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="izM-SN-tQB"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="planetImageView" destination="PcK-eP-nah" id="WG5-eB-P79"/>
+                <outlet property="subtitleLabel" destination="oEQ-Lo-23a" id="cAl-8r-8gb"/>
+                <outlet property="titleLabel" destination="Ret-Vn-msr" id="xTu-hX-qjn"/>
+            </connections>
+            <point key="canvasLocation" x="329.71014492753625" y="174.10714285714286"/>
+        </tableViewCell>
+    </objects>
+</document>

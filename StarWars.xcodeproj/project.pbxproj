@@ -13,6 +13,28 @@
 		C03A59212AB193BE00DDBD56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C03A591F2AB193BE00DDBD56 /* Main.storyboard */; };
 		C03A59232AB193C200DDBD56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C03A59222AB193C200DDBD56 /* Assets.xcassets */; };
 		C03A59262AB193C200DDBD56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C03A59242AB193C200DDBD56 /* LaunchScreen.storyboard */; };
+		C03A59472AB1943400DDBD56 /* SkeletonView in Frameworks */ = {isa = PBXBuildFile; productRef = C03A59462AB1943400DDBD56 /* SkeletonView */; };
+		C03A594B2AB194AB00DDBD56 /* PlanetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03A594A2AB194AB00DDBD56 /* PlanetsViewController.swift */; };
+		C03A594D2AB194D300DDBD56 /* PlanetDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03A594C2AB194D300DDBD56 /* PlanetDetailViewController.swift */; };
+		C03A59502AB194FD00DDBD56 /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03A594F2AB194FD00DDBD56 /* Planet.swift */; };
+		C03A59532AB1952300DDBD56 /* PlanetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03A59522AB1952300DDBD56 /* PlanetViewModel.swift */; };
+		C03A59552AB1953600DDBD56 /* PlanetsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03A59542AB1953600DDBD56 /* PlanetsViewModel.swift */; };
+		C03A59592AB1959300DDBD56 /* GetPlanetsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03A59582AB1959300DDBD56 /* GetPlanetsResponse.swift */; };
+		C03A595B2AB195A700DDBD56 /* PlanetResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03A595A2AB195A700DDBD56 /* PlanetResponse.swift */; };
+		C03A595E2AB195D200DDBD56 /* PlanetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03A595D2AB195D200DDBD56 /* PlanetService.swift */; };
+		C03A59602AB195E700DDBD56 /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03A595F2AB195E700DDBD56 /* ImageService.swift */; };
+		C03A59642AB196C800DDBD56 /* PlanetInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03A59622AB196C800DDBD56 /* PlanetInfoTableViewCell.swift */; };
+		C03A59652AB196C800DDBD56 /* PlanetInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C03A59632AB196C800DDBD56 /* PlanetInfoTableViewCell.xib */; };
+		C03A59672AB1971A00DDBD56 /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03A59662AB1971A00DDBD56 /* ReusableView.swift */; };
+		C03A596A2AB1978F00DDBD56 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03A59692AB1978F00DDBD56 /* Constants.swift */; };
+		C03A596D2AB197ED00DDBD56 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03A596C2AB197ED00DDBD56 /* UIImageViewExtension.swift */; };
+		C03A596F2AB1981200DDBD56 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03A596E2AB1981200DDBD56 /* UIViewControllerExtension.swift */; };
+		C03A59712AB1993600DDBD56 /* StartwarsEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03A59702AB1993600DDBD56 /* StartwarsEndpoint.swift */; };
+		C08C919D2AB1A02000F98B31 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = C08C919C2AB1A02000F98B31 /* Alamofire */; };
+		C08C91A02AB1A04400F98B31 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = C08C919F2AB1A04400F98B31 /* RxCocoa */; };
+		C08C91A22AB1A04400F98B31 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C08C91A12AB1A04400F98B31 /* RxSwift */; };
+		C0EDCBAD2AB1B8AE00CD9B9E /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0EDCBAC2AB1B8AE00CD9B9E /* ImageLoader.swift */; };
+		C0EDCBB02AB1BD5D00CD9B9E /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = C0EDCBAF2AB1BD5D00CD9B9E /* AlamofireImage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +46,23 @@
 		C03A59222AB193C200DDBD56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C03A59252AB193C200DDBD56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C03A59272AB193C200DDBD56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C03A594A2AB194AB00DDBD56 /* PlanetsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetsViewController.swift; sourceTree = "<group>"; };
+		C03A594C2AB194D300DDBD56 /* PlanetDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetDetailViewController.swift; sourceTree = "<group>"; };
+		C03A594F2AB194FD00DDBD56 /* Planet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planet.swift; sourceTree = "<group>"; };
+		C03A59522AB1952300DDBD56 /* PlanetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetViewModel.swift; sourceTree = "<group>"; };
+		C03A59542AB1953600DDBD56 /* PlanetsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetsViewModel.swift; sourceTree = "<group>"; };
+		C03A59582AB1959300DDBD56 /* GetPlanetsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPlanetsResponse.swift; sourceTree = "<group>"; };
+		C03A595A2AB195A700DDBD56 /* PlanetResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetResponse.swift; sourceTree = "<group>"; };
+		C03A595D2AB195D200DDBD56 /* PlanetService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetService.swift; sourceTree = "<group>"; };
+		C03A595F2AB195E700DDBD56 /* ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
+		C03A59622AB196C800DDBD56 /* PlanetInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetInfoTableViewCell.swift; sourceTree = "<group>"; };
+		C03A59632AB196C800DDBD56 /* PlanetInfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlanetInfoTableViewCell.xib; sourceTree = "<group>"; };
+		C03A59662AB1971A00DDBD56 /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
+		C03A59692AB1978F00DDBD56 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C03A596C2AB197ED00DDBD56 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
+		C03A596E2AB1981200DDBD56 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		C03A59702AB1993600DDBD56 /* StartwarsEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartwarsEndpoint.swift; sourceTree = "<group>"; };
+		C0EDCBAC2AB1B8AE00CD9B9E /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +70,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C08C91A02AB1A04400F98B31 /* RxCocoa in Frameworks */,
+				C03A59472AB1943400DDBD56 /* SkeletonView in Frameworks */,
+				C0EDCBB02AB1BD5D00CD9B9E /* AlamofireImage in Frameworks */,
+				C08C91A22AB1A04400F98B31 /* RxSwift in Frameworks */,
+				C08C919D2AB1A02000F98B31 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +100,120 @@
 		C03A59182AB193BE00DDBD56 /* StarWars */ = {
 			isa = PBXGroup;
 			children = (
-				C03A59192AB193BE00DDBD56 /* AppDelegate.swift */,
-				C03A591B2AB193BE00DDBD56 /* SceneDelegate.swift */,
-				C03A591D2AB193BE00DDBD56 /* ViewController.swift */,
-				C03A591F2AB193BE00DDBD56 /* Main.storyboard */,
-				C03A59222AB193C200DDBD56 /* Assets.xcassets */,
+				C0EDCBA72AB1B5F600CD9B9E /* Common */,
+				C03A59492AB1948E00DDBD56 /* Controllers */,
+				C03A596B2AB197D300DDBD56 /* Extensions */,
+				C03A59682AB1976500DDBD56 /* Helpers */,
+				C03A594E2AB194EF00DDBD56 /* Models */,
+				C03A59562AB1956700DDBD56 /* Networking */,
+				C03A59482AB1945600DDBD56 /* Storyboards */,
+				C03A59512AB1951500DDBD56 /* ViewModels */,
+				C03A59612AB1961200DDBD56 /* Views */,
 				C03A59242AB193C200DDBD56 /* LaunchScreen.storyboard */,
+				C03A59222AB193C200DDBD56 /* Assets.xcassets */,
+				C03A591D2AB193BE00DDBD56 /* ViewController.swift */,
+				C03A591B2AB193BE00DDBD56 /* SceneDelegate.swift */,
+				C03A59192AB193BE00DDBD56 /* AppDelegate.swift */,
 				C03A59272AB193C200DDBD56 /* Info.plist */,
 			);
 			path = StarWars;
+			sourceTree = "<group>";
+		};
+		C03A59482AB1945600DDBD56 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				C03A591F2AB193BE00DDBD56 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		C03A59492AB1948E00DDBD56 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C03A594A2AB194AB00DDBD56 /* PlanetsViewController.swift */,
+				C03A594C2AB194D300DDBD56 /* PlanetDetailViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C03A594E2AB194EF00DDBD56 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C03A594F2AB194FD00DDBD56 /* Planet.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C03A59512AB1951500DDBD56 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				C03A59522AB1952300DDBD56 /* PlanetViewModel.swift */,
+				C03A59542AB1953600DDBD56 /* PlanetsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		C03A59562AB1956700DDBD56 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				C03A595C2AB195C400DDBD56 /* Services */,
+				C03A59572AB1957200DDBD56 /* Responses */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		C03A59572AB1957200DDBD56 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				C03A59582AB1959300DDBD56 /* GetPlanetsResponse.swift */,
+				C03A595A2AB195A700DDBD56 /* PlanetResponse.swift */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		C03A595C2AB195C400DDBD56 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C03A595D2AB195D200DDBD56 /* PlanetService.swift */,
+				C03A595F2AB195E700DDBD56 /* ImageService.swift */,
+				C03A59702AB1993600DDBD56 /* StartwarsEndpoint.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C03A59612AB1961200DDBD56 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C03A59622AB196C800DDBD56 /* PlanetInfoTableViewCell.swift */,
+				C03A59632AB196C800DDBD56 /* PlanetInfoTableViewCell.xib */,
+				C03A59662AB1971A00DDBD56 /* ReusableView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C03A59682AB1976500DDBD56 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C03A59692AB1978F00DDBD56 /* Constants.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		C03A596B2AB197D300DDBD56 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C03A596C2AB197ED00DDBD56 /* UIImageViewExtension.swift */,
+				C03A596E2AB1981200DDBD56 /* UIViewControllerExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C0EDCBA72AB1B5F600CD9B9E /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				C0EDCBAC2AB1B8AE00CD9B9E /* ImageLoader.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +232,13 @@
 			dependencies = (
 			);
 			name = StarWars;
+			packageProductDependencies = (
+				C03A59462AB1943400DDBD56 /* SkeletonView */,
+				C08C919C2AB1A02000F98B31 /* Alamofire */,
+				C08C919F2AB1A04400F98B31 /* RxCocoa */,
+				C08C91A12AB1A04400F98B31 /* RxSwift */,
+				C0EDCBAF2AB1BD5D00CD9B9E /* AlamofireImage */,
+			);
 			productName = StarWars;
 			productReference = C03A59162AB193BE00DDBD56 /* StarWars.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +267,12 @@
 				Base,
 			);
 			mainGroup = C03A590D2AB193BE00DDBD56;
+			packageReferences = (
+				C03A59452AB1943400DDBD56 /* XCRemoteSwiftPackageReference "SkeletonView" */,
+				C08C919B2AB1A02000F98B31 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				C08C919E2AB1A04400F98B31 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				C0EDCBAE2AB1BD5D00CD9B9E /* XCRemoteSwiftPackageReference "AlamofireImage" */,
+			);
 			productRefGroup = C03A59172AB193BE00DDBD56 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -128,6 +290,7 @@
 				C03A59262AB193C200DDBD56 /* LaunchScreen.storyboard in Resources */,
 				C03A59232AB193C200DDBD56 /* Assets.xcassets in Resources */,
 				C03A59212AB193BE00DDBD56 /* Main.storyboard in Resources */,
+				C03A59652AB196C800DDBD56 /* PlanetInfoTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,9 +301,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C03A59642AB196C800DDBD56 /* PlanetInfoTableViewCell.swift in Sources */,
+				C03A59532AB1952300DDBD56 /* PlanetViewModel.swift in Sources */,
+				C03A594B2AB194AB00DDBD56 /* PlanetsViewController.swift in Sources */,
 				C03A591E2AB193BE00DDBD56 /* ViewController.swift in Sources */,
+				C03A596F2AB1981200DDBD56 /* UIViewControllerExtension.swift in Sources */,
+				C03A595E2AB195D200DDBD56 /* PlanetService.swift in Sources */,
+				C03A596A2AB1978F00DDBD56 /* Constants.swift in Sources */,
+				C03A59672AB1971A00DDBD56 /* ReusableView.swift in Sources */,
 				C03A591A2AB193BE00DDBD56 /* AppDelegate.swift in Sources */,
+				C03A59602AB195E700DDBD56 /* ImageService.swift in Sources */,
+				C03A59552AB1953600DDBD56 /* PlanetsViewModel.swift in Sources */,
+				C03A59502AB194FD00DDBD56 /* Planet.swift in Sources */,
+				C0EDCBAD2AB1B8AE00CD9B9E /* ImageLoader.swift in Sources */,
+				C03A59712AB1993600DDBD56 /* StartwarsEndpoint.swift in Sources */,
+				C03A595B2AB195A700DDBD56 /* PlanetResponse.swift in Sources */,
+				C03A594D2AB194D300DDBD56 /* PlanetDetailViewController.swift in Sources */,
 				C03A591C2AB193BE00DDBD56 /* SceneDelegate.swift in Sources */,
+				C03A596D2AB197ED00DDBD56 /* UIImageViewExtension.swift in Sources */,
+				C03A59592AB1959300DDBD56 /* GetPlanetsResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,6 +474,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,6 +482,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sk.StarWars;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -323,6 +506,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,6 +514,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sk.StarWars;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -358,6 +545,69 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C03A59452AB1943400DDBD56 /* XCRemoteSwiftPackageReference "SkeletonView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Juanpe/SkeletonView.git";
+			requirement = {
+				kind = exactVersion;
+				version = 1.9.0;
+			};
+		};
+		C08C919B2AB1A02000F98B31 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = exactVersion;
+				version = 5.8.0;
+			};
+		};
+		C08C919E2AB1A04400F98B31 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = exactVersion;
+				version = 6.5.0;
+			};
+		};
+		C0EDCBAE2AB1BD5D00CD9B9E /* XCRemoteSwiftPackageReference "AlamofireImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/AlamofireImage.git";
+			requirement = {
+				kind = exactVersion;
+				version = 4.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C03A59462AB1943400DDBD56 /* SkeletonView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C03A59452AB1943400DDBD56 /* XCRemoteSwiftPackageReference "SkeletonView" */;
+			productName = SkeletonView;
+		};
+		C08C919C2AB1A02000F98B31 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C08C919B2AB1A02000F98B31 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		C08C919F2AB1A04400F98B31 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C08C919E2AB1A04400F98B31 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		C08C91A12AB1A04400F98B31 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C08C919E2AB1A04400F98B31 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		C0EDCBAF2AB1BD5D00CD9B9E /* AlamofireImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C0EDCBAE2AB1BD5D00CD9B9E /* XCRemoteSwiftPackageReference "AlamofireImage" */;
+			productName = AlamofireImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C03A590E2AB193BE00DDBD56 /* Project object */;
 }

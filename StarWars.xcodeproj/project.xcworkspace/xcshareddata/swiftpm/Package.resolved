@@ -1,0 +1,41 @@
+{
+  "pins" : [
+    {
+      "identity" : "alamofire",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Alamofire/Alamofire.git",
+      "state" : {
+        "revision" : "b2fa556e4e48cbf06cf8c63def138c98f4b811fa",
+        "version" : "5.8.0"
+      }
+    },
+    {
+      "identity" : "alamofireimage",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Alamofire/AlamofireImage.git",
+      "state" : {
+        "revision" : "98cbb00ce0ec5fc8e52a5b50a6bfc08d3e5aee10",
+        "version" : "4.2.0"
+      }
+    },
+    {
+      "identity" : "rxswift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ReactiveX/RxSwift.git",
+      "state" : {
+        "revision" : "b4307ba0b6425c0ba4178e138799946c3da594f8",
+        "version" : "6.5.0"
+      }
+    },
+    {
+      "identity" : "skeletonview",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Juanpe/SkeletonView.git",
+      "state" : {
+        "revision" : "7a2cc5d51d5dda6fecca542f1930602cce4a6063",
+        "version" : "1.9.0"
+      }
+    }
+  ],
+  "version" : 2
+}
