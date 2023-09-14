@@ -13,15 +13,16 @@ import RxCocoa
 class PlanetCollectionViewModel {
     
     // MARK: - Output
-    let planets: BehaviorRelay<[PlanetViewModel]> = BehaviorRelay(value: [])
-    let onError: PublishRelay<Error> = PublishRelay()
-    var selectedPlanet: PlanetViewModel? = nil
-    private(set) var hasReachedFinalPage: Bool = false
+    public let planets: BehaviorRelay<[PlanetViewModel]> = BehaviorRelay(value: [])
+    public let onError: PublishRelay<Error> = PublishRelay()
+    public var selectedPlanet: PlanetViewModel? = nil
+    public private(set) var hasReachedFinalPage: Bool = false
+    public private(set) var isLoading: PublishRelay<Bool> = PublishRelay()
     
     private var page: Int = 1
     private var maxPlanets: Int = 0
     
-    func configure() {}
+    public func configure() {}
     
     /**
      Validates user is checking the final row
@@ -54,8 +55,12 @@ class PlanetCollectionViewModel {
      */
     public func fetchData() {
         let page = page == 1 ? nil : "\(page)"
+        isLoading.accept(true)
+        
         PlanetService.getPlanets(page: page) { [weak self] (result: Result<GetPlanetsResponse, Error>) in
             guard let self = self else { return }
+            
+            self.isLoading.accept(false)
             
             switch result {
             case .success(let response):

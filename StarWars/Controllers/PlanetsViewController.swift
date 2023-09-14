@@ -15,6 +15,7 @@ class PlanetsViewController: UIViewController {
     // MARK: - Outlets
     
     @IBOutlet weak var tableView: UITableView!
+    private let refreshControl = UIActivityIndicatorView(style: .medium)
     
     // MARK: - Properties
     
@@ -35,6 +36,8 @@ class PlanetsViewController: UIViewController {
     // MARK: - Configurations
     
     private func configureTableView() {
+        refreshControl.hidesWhenStopped = true
+        tableView.tableFooterView = refreshControl
         tableView.register(
             UINib(nibName: "PlanetInfoTableViewCell", bundle: .main),
             forCellReuseIdentifier: PlanetInfoTableViewCell.defaultReuseIdentifier
@@ -80,6 +83,27 @@ class PlanetsViewController: UIViewController {
             .subscribe(onNext: { [weak self] _ in
                 self?.viewModel.fetchData()
             }).disposed(by: bag)
+        
+        // Loader added
+        viewModel.isLoading.subscribe(onNext: { [weak self] isLoading in
+            guard let self = self else { return }
+            self.refresh(isLoading: isLoading)
+        }).disposed(by: bag)
+    }
+    
+    /**
+     Control refresh control
+     */
+    private func refresh(isLoading: Bool) {
+        if isLoading && !refreshControl.isAnimating {
+            refreshControl.startAnimating()
+            return
+        }
+        
+        if !isLoading && refreshControl.isAnimating {
+            refreshControl.stopAnimating()
+            return
+        }
     }
     
     // MARK: - Navigation
